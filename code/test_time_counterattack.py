@@ -42,12 +42,9 @@ def parse_options():
     parser.add_argument('--add_prompt_size', type=int, default=0, help='size for additional visual prompts')
 
     # data
-    parser.add_argument('--root', type=str, 
-                        default='./data', help='dataset path')
-    parser.add_argument('--dataset', type=str, default='tinyImageNet', 
-                        help='dataset used for AFT methods')
-    parser.add_argument('--image_size', type=int, default=224,
-                        help='image size')
+    parser.add_argument('--root', type=str, default='./data', help='dataset path')
+    parser.add_argument('--dataset', type=str, default='tinyImageNet', help='dataset used for AFT methods')
+    parser.add_argument('--image_size', type=int, default=224, help='image size')
     
     # TTC config
     parser.add_argument('--seed', type=int, default=0, help='seed for initializing training')
@@ -354,7 +351,7 @@ def main():
     args.ttc_stepsize = args.ttc_stepsize / 255.
     args.ttc_eps = args.ttc_eps / 255.
 
-    imagenet_root = '.data/ImageNet'
+    imagenet_root = './data/ImageNet'
     tinyimagenet_root = "./data/tiny-imagenet-200"
     args.imagenet_root = imagenet_root
     args.tinyimagenet_root = tinyimagenet_root
