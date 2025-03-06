@@ -303,7 +303,7 @@ DATASETS = [
     'cifar10', 'cifar100', 'STL10','ImageNet',
     'Caltech101', 'Caltech256', 'oxfordpet', 'flowers102', 'fgvc_aircraft',
     'StanfordCars', 'SUN397', 'Country211', 'Food101', 'EuroSAT',
-    'dtd', 'PCAM'
+    'dtd', 'PCAM', 'tinyImageNet',
 ]
 
 
