@@ -3,7 +3,9 @@ import os
 import torch
 import numpy as np
 import torchvision.transforms as transforms
-from torchvision.datasets import *
+from torchvision.datasets import CIFAR10, CIFAR100, STL10, ImageFolder
+from replace.datasets import caltech, country211, dtd,eurosat, fgvc_aircraft, food101, \
+                             flowers102, oxford_iiit_pet, pcam, stanford_cars, sun397
 from torch.utils.data import DataLoader
 import json
 
@@ -183,46 +185,46 @@ def load_val_dataset(args, val_dataset_name):
         val_dataset = CIFAR100(args.root, transform=preprocess224, download=True, train=False)
 
     elif val_dataset_name == 'Caltech101':
-        val_dataset = Caltech101(args.root, target_type='category', transform=preprocess224_caltech, download=True)
+        val_dataset = caltech.Caltech101(args.root, target_type='category', transform=preprocess224_caltech, download=True)
 
     elif val_dataset_name == 'PCAM':
-        val_dataset = PCAM(args.root, split='test', transform=preprocess224, download=True)
+        val_dataset = pcam.PCAM(args.root, split='test', transform=preprocess224, download=True)
 
     elif val_dataset_name == 'STL10':
         val_dataset = STL10(args.root, split='test', transform=preprocess224, download=True)
 
     elif val_dataset_name == 'SUN397':
-        val_dataset = SUN397(args.root, transform=preprocess224, download=True)
+        val_dataset = sun397.SUN397(args.root, transform=preprocess224, download=True)
 
     elif val_dataset_name == 'StanfordCars':
-        val_dataset = StanfordCars(args.root, split='test', transform=preprocess224, download=True)
+        val_dataset = stanford_cars.StanfordCars(args.root, split='test', transform=preprocess224, download=True)
 
     elif val_dataset_name == 'Food101':
-        val_dataset = Food101(args.root, split='test', transform=preprocess224, download=True)
+        val_dataset = food101.Food101(args.root, split='test', transform=preprocess224, download=True)
 
     elif val_dataset_name == 'oxfordpet':
-        val_dataset = OxfordIIITPet(args.root, split='test', transform=preprocess224, download=True)
+        val_dataset = oxford_iiit_pet.OxfordIIITPet(args.root, split='test', transform=preprocess224, download=True)
 
     elif val_dataset_name == 'EuroSAT':
-        val_dataset = EuroSAT(args.root, transform=preprocess224, download=True)
+        val_dataset = eurosat.EuroSAT(args.root, transform=preprocess224, download=True)
 
     elif val_dataset_name == 'Caltech256':
-        val_dataset = Caltech256(args.root, transform=preprocess224_caltech, download=True)
+        val_dataset = caltech.Caltech256(args.root, transform=preprocess224_caltech, download=True)
 
     elif val_dataset_name == 'flowers102':
-        val_dataset = Flowers102(args.root, split='test', transform=preprocess224, download=True)
+        val_dataset = flowers102.Flowers102(args.root, split='test', transform=preprocess224, download=True)
 
     elif val_dataset_name == 'Country211':
-        val_dataset = Country211(args.root, split='test', transform=preprocess224, download=True)
+        val_dataset = country211.Country211(args.root, split='test', transform=preprocess224, download=True)
 
     elif val_dataset_name == 'dtd':
-        val_dataset = DTD(args.root, split='test', transform=preprocess224, download=True)
+        val_dataset = dtd.DTD(args.root, split='test', transform=preprocess224, download=True)
 
     elif val_dataset_name == 'fgvc_aircraft':
-        val_dataset = FGVCAircraft(args.root, split='test', transform=preprocess224, download=True)
+        val_dataset = fgvc_aircraft.FGVCAircraft(args.root, split='test', transform=preprocess224, download=True)
     
     elif val_dataset_name == 'ImageNet':
-        from torchvision.datasets import ImageNetFolder
+        from replace.datasets.folder import ImageNetFolder
         if args.evaluate:
             val_dataset = ImageNetFolder(os.path.join(args.imagenet_root, 'val'), transform=preprocess224)
         else:
@@ -230,7 +232,7 @@ def load_val_dataset(args, val_dataset_name):
             val_dataset = ImageNetFolder(os.path.join(args.imagenet_root, 'train'), transform=preprocess224, select_files=eval_select)
     
     elif val_dataset_name == 'tinyImageNet':
-        from torchvision.datasets import ImageNetFolder
+        from replace.datasets.folder import ImageNetFolder
         if args.evaluate:
             val_dataset = ImageNetFolder(os.path.join(args.tinyimagenet_root, 'val_'), transform=preprocess224)
         else:
