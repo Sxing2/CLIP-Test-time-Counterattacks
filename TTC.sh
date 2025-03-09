@@ -2,7 +2,7 @@
 
 conda activate TTC
 
-cd ./CLIP-Test-time-Counterattacks
+cd ./
 
 python code/test_time_counterattack.py \
     --batch_size 256 \
