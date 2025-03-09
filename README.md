@@ -9,11 +9,11 @@ This is the official code of our work:
   <img src="figures/fig2b.png" width="40%" />
 </p>
 
-## Environment
+## 🛠️ Environment setup
 ```bash
 conda env create -f environment.yml
 pip install -r requirements.txt
 ```
 
-## Updates
+## 📬 Updates
 7 March 2025: **Please stay tuned for instructions to run the code!**
