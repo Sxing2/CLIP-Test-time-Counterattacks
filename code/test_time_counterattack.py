@@ -11,7 +11,7 @@ from copy import deepcopy as dcopy
 import torch
 from torch.cuda.amp import GradScaler, autocast
 
-import replace.clip
+from replace import clip
 from models.prompters import TokenPrompter, NullPrompter
 from utils import *
 from attacks import *
