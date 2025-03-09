@@ -4,7 +4,9 @@ This is the official code of our work:
 [CLIP is Strong Enough to Fight Back: Test-time Counterattacks towards Zero-shot Adversarial Robustness of CLIP](https://arxiv.org/abs/2503.03613). Songlong Xing, Zhengyu Zhao, Nicu Sebe. To appear in CVPR 2025.
 
 <p align="center">
-  <img src="figures/teaser.png" width="60%" />
+  <img src="figures/teaser.png" width="40%" />
+  &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+  <img src="figures/fig2b.png" width="40%" />
 </p>
 
 ## Environment
