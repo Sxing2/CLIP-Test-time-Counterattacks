@@ -1,0 +1,5 @@
+git+https://github.com/openai/CLIP.git
+git+https://github.com/fra31/auto-attack
+einops==0.8.1
+pycountry==24.6.1
+packaging==24.2
