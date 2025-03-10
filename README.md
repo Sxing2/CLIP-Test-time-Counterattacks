@@ -20,7 +20,7 @@ conda activate TTC
 pip install -r requirements.txt
 ```
 ### Data preparation
-Please download and unzip all the raw datasets into `./data`. It's okay to skip this step because torchvision.datasets will automatically download (most of) them if you don't already have them as you run the code.
+Please download and unzip all the raw datasets into `./data`. It's okay to skip this step because `torchvision.datasets` will automatically download (most of) them as you run the code if you don't already have them.
 
 ## 🔥 Run
 The file `code/test_time_counterattack.py` contains the main program. To reproduce the results of TTC employed on the original CLIP (Tab.1 in the paper), run the following command:
