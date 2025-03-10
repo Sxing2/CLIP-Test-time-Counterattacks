@@ -9,11 +9,15 @@ This is the official code of our work:
   <img src="figures/fig2b.png" width="40%" />
 </p>
 
-## 🛠️ Environment setup
+## 🛠️ Setup
+### Environment
+Make sure you have installed conda and use the following commands to get the env ready!
 ```bash
 conda env create -f environment.yml
 pip install -r requirements.txt
 ```
+### Data preparation
+Please download and unzip all the raw datasets into `./data`. It's okay to skip this step because torchvision.datasets will automatically  download (most of) them if you don't already have them as you run the code.
 
 ## 📬 Updates
 7 March 2025: **Please stay tuned for instructions to run the code!**
