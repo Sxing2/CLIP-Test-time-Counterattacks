@@ -34,3 +34,14 @@ Please download and unzip all the raw datasets into `./data`. It's okay to skip 
   year={2025}
 }
 ```
+
+## Ackowledgement
+Our code is developed based on [TeCoA (ICLR-23)](https://github.com/cvlab-columbia/ZSRobust4FoundationModel). We thank the authors for their work. Please also consider citing their paper:
+```
+@inproceedings{maounderstanding,
+  title={Understanding Zero-shot Adversarial Robustness for Large-Scale Models},
+  author={Mao, Chengzhi and Geng, Scott and Yang, Junfeng and Wang, Xin and Vondrick, Carl},
+  booktitle={The Eleventh International Conference on Learning Representations},
+  year={2023}
+}
+```
