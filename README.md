@@ -28,7 +28,8 @@ The file `code/test_time_counterattack.py` contains the main program. To reprodu
 conda activate TTC
 python code/test_time_counterattack.py --batch_size 256 --test_attack_type 'pgd' --test_eps 1  --test_numsteps 10 --test_stepsize 1 --outdir 'TTC_results' --seed 1 --ttc_eps 4 --beta 2 --tau_thres 0.2 --ttc_numsteps 2
 ```
-The results will be saved in the user-specified folder of `--outdir`.
+This command can also be found in `TTC.sh`. You can run `bash TTC.sh` to avoid typing the lengthy command in the terminal.
+The results will be saved in the folder specified by `--outdir`.
 
 ## 📬 Updates
  7 Mar 2025: **Please stay tuned for instructions to run the code!**
