@@ -53,7 +53,7 @@ After the AFT checkpoints are in place, you can run the same command as in `TTC.
 ```
 
 ## Ackowledgement
-Our code is developed based on open-source code of [TeCoA (ICLR-23)](https://github.com/cvlab-columbia/ZSRobust4FoundationModel). We thank the authors for their work. Please also consider citing their paper:
+Our code is developed based on the open-source code of [TeCoA (ICLR-23)](https://github.com/cvlab-columbia/ZSRobust4FoundationModel). We thank the authors for their work. Please also consider citing their paper:
 ```
 @inproceedings{maounderstanding,
   title={Understanding Zero-shot Adversarial Robustness for Large-Scale Models},
