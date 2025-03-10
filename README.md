@@ -38,7 +38,9 @@ After you have the AFT checkpoints in place, you can run the same command as in 
 ## 📬 Updates
  7 Mar 2025: **Please stay tuned for instructions to run the code!**
  
-10 Mar 2025: **Setup updated!**
+10 Mar 2025: **Setup** updated!
+
+10 Mar 2025: **Run Instructions** updated!
 
 ## 🗂️ Reference
 ```
