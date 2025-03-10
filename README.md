@@ -20,7 +20,8 @@ pip install -r requirements.txt
 Please download and unzip all the raw datasets into `./data`. It's okay to skip this step because torchvision.datasets will automatically download (most of) them if you don't already have them as you run the code.
 
 ## 📬 Updates
-7 March 2025: **Please stay tuned for instructions to run the code!**
+ 7 Mar 2025: **Please stay tuned for instructions to run the code!**
+10 Mar 2025: **Updated Setup!**
 
 ## 🗂️ Reference
 ```
