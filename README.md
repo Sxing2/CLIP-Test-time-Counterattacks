@@ -22,6 +22,14 @@ pip install -r requirements.txt
 ### Data preparation
 Please download and unzip all the raw datasets into `./data`. It's okay to skip this step because torchvision.datasets will automatically download (most of) them if you don't already have them as you run the code.
 
+## 🔥 Run
+The file `code/test_time_counterattack.py` contains the main program. To reproduce the results of TTC employed on the original CLIP (Tab.1 in the paper), run the following command:
+```bash
+conda activate TTC
+python code/test_time_counterattack.py --batch_size 256 --test_attack_type 'pgd' --test_eps 1  --test_numsteps 10 --test_stepsize 1 --outdir 'TTC_results' --seed 1 --ttc_eps 4 --beta 2 --tau_thres 0.2 --ttc_numsteps 2
+```
+The results will be saved in the user-specified folder of `--outdir`.
+
 ## 📬 Updates
  7 Mar 2025: **Please stay tuned for instructions to run the code!**
  
