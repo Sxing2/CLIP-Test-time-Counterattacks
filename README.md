@@ -21,3 +21,13 @@ Please download and unzip all the raw datasets into `./data`. It's okay to skip 
 
 ## 📬 Updates
 7 March 2025: **Please stay tuned for instructions to run the code!**
+
+## 🗂️ Reference
+```
+@article{xing2025clip,
+  title={CLIP is Strong Enough to Fight Back: Test-time Counterattacks towards Zero-shot Adversarial Robustness of CLIP},
+  author={Xing, Songlong and Zhao, Zhengyu and Sebe, Nicu},
+  journal={arXiv preprint arXiv:2503.03613},
+  year={2025}
+}
+```
