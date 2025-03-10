@@ -31,7 +31,9 @@ python code/test_time_counterattack.py --batch_size 256 --test_attack_type 'pgd'
 This command can also be found in `TTC.sh`. You can run `bash TTC.sh` to avoid typing the lengthy command in the terminal.
 The results will be saved in the folder specified by `--outdir`.
 
-To employ TTC on adversarially finetuned models, you can specify the path to the finetuned model weights with `--victim_resume`. 
+To employ TTC on adversarially finetuned models, you can specify the path to the finetuned model weights with `--victim_resume`. We provide at this Google drive [link](https://drive.google.com/drive/folders/1aDChTWGOrqK6IrIKVqSyMf4IdIBHEiJr?usp=drive_link) the checkpoints we have obtained via adversarial finetuning, which are used for producing the results reported in Tab.3 in the paper. Download those checkpoints and keep them in the folder `./AFT_model_weights`. This can be done by running `python download_weights.py`. Alternatively, you can implement adversarial finetuning methods on your own and keep the model weights in `./AFT_model_weights`. 
+
+After you have the AFT checkpoints in place, run the same command as in `TTC.sh` with an additional argument `--victim_resume` specifying the path to the model weights. For example, use `--victim_resume "./AFT_model_weights/TeCoA.pth.tar"` if you want to employ TTC on top of TeCoA.
 
 ## 📬 Updates
  7 Mar 2025: **Please stay tuned for instructions to run the code!**
