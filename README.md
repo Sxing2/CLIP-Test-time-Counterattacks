@@ -31,6 +31,8 @@ python code/test_time_counterattack.py --batch_size 256 --test_attack_type 'pgd'
 This command can also be found in `TTC.sh`. You can run `bash TTC.sh` to avoid typing the lengthy command in the terminal.
 The results will be saved in the folder specified by `--outdir`.
 
+To employ TTC on adversarially finetuned models, you can specify the path to the finetuned model weights with `--victim_resume`. 
+
 ## 📬 Updates
  7 Mar 2025: **Please stay tuned for instructions to run the code!**
  
