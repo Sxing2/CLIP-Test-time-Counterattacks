@@ -14,11 +14,7 @@ This is the official code of our work:
 Make sure you have installed conda and use the following commands to get the env ready!
 ```bash
 conda env create -f environment.yml
-```
-```bash
 conda activate TTC
-```
-```bash
 pip install -r requirements.txt
 ```
 ### Data preparation
