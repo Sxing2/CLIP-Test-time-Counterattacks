@@ -3,3 +3,4 @@ git+https://github.com/fra31/auto-attack
 einops==0.8.1
 pycountry==24.6.1
 packaging==24.2
+gdown==5.2.0
