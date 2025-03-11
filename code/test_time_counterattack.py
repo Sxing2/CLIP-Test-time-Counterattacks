@@ -309,7 +309,7 @@ def validate(args, val_dataset_name, model, model_text, model_image,
     zs_clean_ttc_avg = np.mean([all_clean_ttc[name] for name in val_dataset_name if name != args.dataset]).item()
     zs_adv_org_avg = np.mean([all_adv_org[name] for name in val_dataset_name if name != args.dataset]).item()
     zs_adv_ttc_avg = np.mean([all_adv_ttc[name] for name in val_dataset_name if name != args.dataset]).item()
-    show_text = f"===== SUMMARY ACROSS {dataset_num-1} DATASETS (EXCEPT {args.dataset}) =====\n\t"
+    show_text = f"===== SUMMARY ACROSS {len(all_clean_org)} DATASETS (EXCEPT {args.dataset}) =====\n\t"
     show_text += f"AVG acc. {zs_clean_org_avg:.2f} (ttc: {zs_clean_ttc_avg:.2f})\n\t"
     show_text += f"AVG acc. {zs_adv_org_avg:.2f} (ttc: {zs_adv_ttc_avg:.2f})"
     logging.info(show_text)
