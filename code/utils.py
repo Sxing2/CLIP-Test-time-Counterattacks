@@ -171,7 +171,7 @@ def load_train_dataset(args):
 
 def get_eval_files(dataset_name):
     # only for imaegnet and tinyimagenet
-    refined_data_file = f"{dataset_name.lower()}_refined_labels.json"
+    refined_data_file = f"./support/{dataset_name.lower()}_refined_labels.json"
     refined_data = read_json(refined_data_file)
     eval_select = {ssid:refined_data[ssid]['eval_files'] for ssid in refined_data}
     return eval_select
@@ -250,7 +250,7 @@ def load_val_dataset(args, val_dataset_name):
 def get_text_prompts_train(args, train_dataset, template='This is a photo of a {}'):
     class_names = train_dataset.classes
     if args.dataset == 'ImageNet':
-        folder2name = load_imagenet_folder2name('imagenet_classes_names.txt')
+        folder2name = load_imagenet_folder2name('support/imagenet_classes_names.txt')
         new_class_names = []
         for each in class_names:
             new_class_names.append(folder2name[each])
@@ -269,7 +269,7 @@ def get_text_prompts_val(val_dataset_list, val_dataset_name, template='This is a
         else:
             class_names = each.classes if hasattr(each, 'classes') else each.clip_categories
             if val_dataset_name[cnt] in ['ImageNet', 'tinyImageNet']:
-                refined_data = read_json(f"{val_dataset_name[cnt].lower()}_refined_labels.json")
+                refined_data = read_json(f"./support/{val_dataset_name[cnt].lower()}_refined_labels.json")
                 clean_class_names = [refined_data[ssid]['clean_name'] for ssid in class_names]
                 class_names = clean_class_names
                 
