@@ -11,6 +11,10 @@ This is the official code of our work:
   <img src="figures/fig2b.png" width="40%" />
 </p>
 
+<p align="center">
+  <img src="poster_CVPR_XING.png" width="80%" />
+</p>
+
 ## 🛠️ Setup
 ### Environment
 Make sure you have installed conda and use the following commands to get the env ready!
