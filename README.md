@@ -42,11 +42,13 @@ After the AFT checkpoints are in place, you can run the same command as in `TTC.
 
 ## 🗂️ Reference
 ```
-@article{xing2025clip,
-  title={CLIP is Strong Enough to Fight Back: Test-time Counterattacks towards Zero-shot Adversarial Robustness of CLIP},
-  author={Xing, Songlong and Zhao, Zhengyu and Sebe, Nicu},
-  journal={arXiv preprint arXiv:2503.03613},
-  year={2025}
+@InProceedings{Xing_2025_CVPR,
+    author    = {Xing, Songlong and Zhao, Zhengyu and Sebe, Nicu},
+    title     = {CLIP is Strong Enough to Fight Back: Test-time Counterattacks towards Zero-shot Adversarial Robustness of CLIP},
+    booktitle = {Proceedings of the Computer Vision and Pattern Recognition Conference (CVPR)},
+    month     = {June},
+    year      = {2025},
+    pages     = {15172-15182}
 }
 ```
 
